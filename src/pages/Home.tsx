@@ -15,7 +15,7 @@ import {
   IonText,
 } from '@ionic/react';
 import { camera, videocam, albums, notifications, chatbox, person } from 'ionicons/icons';
-import './Home.css';
+
 
 const Home: React.FC = () => {
   return (
