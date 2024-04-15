@@ -13,7 +13,7 @@ const Profile: React.FC = () => {
 
   const handleProceed = () => {
     setShowAlert(false);
-    window.open('https://www.facebook.com/profile.php?id=100090915698723', '_blank');
+    window.open('https://www.facebook.com/dianemorales333', '_blank');
   };
 
   const handleOpenActionSheet = () => {
