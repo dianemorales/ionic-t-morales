@@ -44,7 +44,7 @@ const Home: React.FC = () => {
           {/* Post Status */}
           <IonItem>
             <IonAvatar slot="start">
-              <img src="../src/assets/img/home-page-png.jpg" alt="profile" />
+              <img src="src/assets/image/Diane.jpg" alt="profile" />
             </IonAvatar>
             <IonTextarea auto-grow placeholder="What's on your mind?" />
           </IonItem>
@@ -72,9 +72,9 @@ const Home: React.FC = () => {
           </IonToolbar>
 
           <IonToolbar color="light">
-            <img src="../src/assets/img/PROFILE_PIC.png" alt="profile" />
+            <img src="src/assets/image/Diane.jpg" alt="profile" />
             <IonText style={{ textAlign: 'center' }}>
-            Welcome to Gelay's property😊❤️
+            hi im Diane Morales Welcome to my world
             </IonText>
 
           </IonToolbar>
