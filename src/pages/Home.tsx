@@ -5,64 +5,70 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
-  IonList,
-  IonItem,
-  IonAvatar,
-  IonTextarea,
-  IonButton,
   IonIcon,
-  IonFooter,
-  IonText,
+  IonCard,
+  IonCardContent,
+  IonCardHeader,
+  IonCardTitle,
 } from '@ionic/react';
-import { camera, videocam, albums, notifications, chatbox, person } from 'ionicons/icons';
-import './home.css';
+import { pulseOutline, calculatorOutline, list, todayOutline } from 'ionicons/icons';
+import { useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  const history = useHistory();
+
+  const goToClickCounter = () => {
+    history.push('/click_counter');
+  };
+
+  const goToCalculator = () => {
+    history.push('/calculator');
+  };
+
+  const goToTodolist = () => {
+    history.push('/todolist');
+  };
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Home</IonTitle>
         </IonToolbar>
-        
-        
+        <hr />
       </IonHeader>
-      <IonContent fullscreen>
-        {/* Post Section */}
-        <IonList>
-          {/* Post Status */}
-          <IonItem>
-            <IonAvatar slot="start">
-              <img src="../src/assets/image/whoisthat.jpg" />
-            </IonAvatar>
-            <IonTextarea auto-grow placeholder="What's on your mind?" />
-          </IonItem>
+      <IonContent fullscreen className="ion-padding">
+        <div className="ion-text-center"> {/* Centering content */}
+        <IonCard onClick={goToClickCounter} style={{ width: '350px', cursor: 'pointer' }} color="light">
+            <IonCardContent style={{ fontSize: '30px' }}>
+              <IonIcon icon={pulseOutline} slot="start" />
+              Click Counter
+            </IonCardContent>
+          </IonCard>
+  
+          <IonCard onClick={goToCalculator} style={{ width: '350px', cursor: 'pointer' }} color="light">
+            <IonCardContent style={{ fontSize: '30px' }}>
+              <IonIcon icon={calculatorOutline} slot="start" />
+              Calculator
+            </IonCardContent>
+          </IonCard>
           
-
-        </IonList>
-
-        
-        <IonFooter>
-          <IonToolbar>
-            <IonButton color="danger" slot="start">
-              <IonIcon icon={camera} />
-              <IonText>Photos</IonText>
-            </IonButton>
-            <IonButton color="success" slot="start">
-              <IonIcon icon={videocam} />
-              <IonText>Videos</IonText>
-            </IonButton>
-            <IonButton color="success" slot="start">
-              <IonIcon icon={albums} />
-              <IonText>Reels</IonText>
-            </IonButton>
-          </IonToolbar>
-          Hello World<br></br>THIS IS MY HOME PAGE
-        </IonFooter>
-
+          <IonCard onClick={goToTodolist} style={{ width: '350px', cursor: 'pointer' }} color="light">
+            <IonCardContent style={{ fontSize: '30px' }}>
+              <IonIcon icon={todayOutline} slot="start" />
+              Todo list
+            </IonCardContent>
+          </IonCard>
+          <IonCard style={{ width: '350px' }} color="light">
+            <IonCardContent style={{ fontSize: '30px' }}>
+              Blank
+            </IonCardContent>
+          </IonCard>
+        </div>
       </IonContent>
     </IonPage>
   );
+  
 };
 
 export default Home;
