@@ -13,10 +13,10 @@ import { IonReactRouter } from '@ionic/react-router';
 import { home, calculatorOutline, ellipse, fingerPrintOutline, personCircleOutline, square, triangle, closeOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
-import Click_counter from './pages/Clickcounter';
+import Clickcounter from './pages/Clickcounter';
 import Calculator from './pages/Calculator';
-import To_do_list from './pages/Todolist';
-import Qoutes_Generator from './pages/qoutesgenerator';
+import Todolist from './pages/Todolist';
+import Quotesgenerator from './pages/quotesgenerator/Quotesgenerator';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -63,16 +63,16 @@ const App: React.FC = () => (
             <Calculator />
           </Route>
 
-          <Route exact path="/click_counter">
-            <Click_counter />
+          <Route exact path="/clickcounter">
+            <Clickcounter />
           </Route>
 
           <Route exact path="/todolist">
-            < To_do_list />
+            < Todolist />
           </Route>
 
-          <Route exact path="/qoutes_generator">
-            < Qoutes_Generator />
+          <Route exact path="/quotesgenerator">
+            < Quotesgenerator />
           </Route>
 
           <Route exact path="/profile">
@@ -101,10 +101,10 @@ const App: React.FC = () => (
           </IonTabButton>
         */}
 
-          <IonTabButton tab="tab4" href="/tab4">
+          {/* <IonTabButton tab="tab4" href="/tab4">
             <IonIcon aria-hidden="true" icon={closeOutline} />
             <IonLabel>Blank</IonLabel>
-          </IonTabButton>
+          </IonTabButton> */}
 
           
           <IonTabButton tab="profile" href="/profile">
