@@ -52,31 +52,23 @@ const App: React.FC = () => (
             <Home />
           </Route>
 
-          {/* 
-          <Route exact path="/profile">
-            <Profile />
-          </Route>
-          <Route exact path="/click_counter">
-            <Click_counter />
-          </Route>
-          */}
-          <Route path="/ionic-t-morales/home/calculator">
+          <Route path="/ionic-t-morales/calculator">
             <Calculator />
           </Route>
 
-          <Route exact path="/ionic-t-morales/home/clickcounter">
+          <Route exact path="/ionic-t-morales/clickcounter">
             <Clickcounter />
           </Route>
 
-          <Route exact path="/ionic-t-morales/home/todolist">
+          <Route exact path="/ionic-t-morales/todolist">
             < Todolist />
           </Route>
 
-          <Route exact path="/ionic-t-morales/home/quotesgenerator">
+          <Route exact path="/ionic-t-morales/quotesgenerator">
             < Quotesgenerator />
           </Route>
 
-          <Route exact path="/ionic-t-morales/home/notes">
+          <Route exact path="/ionic-t-morales/notes">
             < Notes />
           </Route>
 
@@ -86,7 +78,7 @@ const App: React.FC = () => (
 
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="home" href="/ionic-t-morales/home/home">
+          <IonTabButton tab="home" href="/ionic-t-morales/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
@@ -112,7 +104,7 @@ const App: React.FC = () => (
           </IonTabButton> */}
 
           
-          <IonTabButton tab="profile" href="/ionic-t-morales/home/profile">
+          <IonTabButton tab="profile" href="/ionic-t-morales/profile">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
