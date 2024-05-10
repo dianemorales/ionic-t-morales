@@ -82,28 +82,7 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          
-          {/*
-          <IonTabButton tab="profile" href="/profile">
-            <IonIcon aria-hidden="true" icon={personCircleOutline} />
-            <IonLabel>Profile</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="click_counter" href="/click_counter">
-            <IonIcon aria-hidden="true" icon={fingerPrintOutline} />
-            <IonLabel>Click Counter</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="calculator" href="/calculator">
-            <IonIcon aria-hidden="true" icon={calculatorOutline} />
-            <IonLabel>Calculator</IonLabel>
-          </IonTabButton>
-        */}
-
-          {/* <IonTabButton tab="tab4" href="/tab4">
-            <IonIcon aria-hidden="true" icon={closeOutline} />
-            <IonLabel>Blank</IonLabel>
-          </IonTabButton> */}
-
-          
+    
           <IonTabButton tab="profile" href="/ionic-t-morales/profile">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>

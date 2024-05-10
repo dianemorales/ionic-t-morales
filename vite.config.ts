@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'ionic-t-morales/',
+  base: '/ionic-t-morales/',
   plugins: [
     react(),
     legacy()
