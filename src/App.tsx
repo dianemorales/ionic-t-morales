@@ -45,10 +45,10 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="ionic-t-morales">
-            <Redirect to="ionic-t-morales/home" />
+          <Route exact path="/ionic-t-morales/">
+            <Redirect to="/ionic-t-morales/home" />
           </Route>
-          <Route exact path="ionic-t-morales/home">
+          <Route exact path="/ionic-t-morales/home">
             <Home />
           </Route>
 
@@ -72,7 +72,7 @@ const App: React.FC = () => (
             < Notes />
           </Route>
 
-          <Route exact path="ionic-t-morales/profile">
+          <Route exact path="/ionic-t-morales/profile">
             <Profile />
           </Route>
 
